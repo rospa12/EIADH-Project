@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EIADH Project Dashboard</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <style>
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background-color: #f4f7f6; margin: 0; padding: 20px; }
+        .container { max-width: 1000px; margin: auto; background: white; padding: 30px; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); }
+        h1 { color: #2c3e50; border-bottom: 2px solid #3498db; padding-bottom: 10px; }
+        .role-box { background: #e8f4fd; padding: 15px; border-left: 5px solid #3498db; margin: 20px 0; }
+        .grid { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; margin-top: 30px; }
+        .chart-container { position: relative; height:300px; width:100%; }
+        .stats { display: flex; justify-content: space-around; margin-top: 20px; text-align: center; }
+        .stat-item { background: #34495e; color: white; padding: 15px; border-radius: 5px; flex: 1; margin: 0 10px; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🏛️ EIADH Project Intelligence Dashboard</h1>
+        
+        <div class="role-box">
+            <strong>Lead Coordinator:</strong> [VACANT / TO BE CONFIRMED] <br>
+            <em>Institutional strategic leadership for a €2M international consortium.</em>
+        </div>
+
+        <div class="stats">
+            <div class="stat-item"><strong>Siti Totali</strong><br>150</div>
+            <div class="stat-item"><strong>Riduzione CO2</strong><br>80%</div>
+            <div class="stat-item"><strong>Budget Totale</strong><br>€ 2.002.607</div>
+        </div>
+
+        <div class="grid">
+            <div class="chart-container">
+                <h3>Allocazione Budget per Categoria</h3>
+                <canvas id="budgetChart"></canvas>
+            </div>
+            <div class="chart-container">
+                <h3>Person-Months per Partner (Top 5)</h3>
+                <canvas id="pmChart"></canvas>
+            </div>
+        </div>
+    </div>
